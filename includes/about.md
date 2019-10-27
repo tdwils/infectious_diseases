@@ -22,4 +22,4 @@ The data are from the World Health Organization Global Health Estimates, and wer
 
 ## Code
 
-This application was created with R/Shiny using the packages plotly, ggplot, and rworldmap. The code is available at <github link>.
+This application was created with R/Shiny using the packages plotly, ggplot, and rworldmap. The code is available at  https://github.com/tdwils/infectious_diseases.
