@@ -13,12 +13,10 @@ The script process_data.R was used to process the data and create the datasets u
 Two files were downloaded from https://www.who.int/healthinfo/global_burden_disease/estimates/en/ :
 
 1. Death rates: 
-https://www.who.int/healthinfo/global_burden_disease/GHE2016_Death-Rates-country.xls?ua=1
-The data used were taken from the worksheet labeled "ASDR2016", titled "Age-standardized rate per 100 000 population by cause, sex and WHO Member State (1), 2016""
+https://www.who.int/healthinfo/global_burden_disease/GHE2016_Death-Rates-country.xls?ua=1 , worksheet labeled "ASDR2016", titled "Age-standardized rate per 100 000 population by cause, sex and WHO Member State (1), 2016".
 
 2. Number of deaths: 
-https://www.who.int/healthinfo/global_burden_disease/GHE2016_Deaths_2016-country.xls?ua=1
-Estimated deaths ('000) by cause, sex and WHO Member State (1), 2016
+https://www.who.int/healthinfo/global_burden_disease/GHE2016_Deaths_2016-country.xls?ua=1 , Estimated deaths ('000) by cause, sex and WHO Member State (1), 2016
 
 ### Data citation
 
