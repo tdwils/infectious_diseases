@@ -1,0 +1,47 @@
+/* style.css */
+
+
+.instructionsText {
+  text-align: center; 
+  font-weight: bold; 
+  color: darkblue
+}
+
+
+.title-text {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.reset-button .btn-default {
+  background-color: #ffff33;
+}
+
+
+/* Action button: left aligned */
+.btnLeftAlign {
+  padding-bottom: 20px; 
+  float: left;
+}
+
+
+/* Redefine valuebox color: blue */
+.small-box.bg-blue {
+  background-color: #377eb8 !important;
+  color: #ffffff !important;
+}
+
+/* Redefine valuebox color: green */
+.small-box.bg-green {
+  background-color: #4daf4a !important;
+  color: #ffffff !important;
+}
+
+/* Redefine valuebox color: purple */
+.small-box.bg-purple {
+  background-color: #984ea3 !important;
+  color: #ffffff !important;
+}
+
+
