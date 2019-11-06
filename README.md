@@ -6,6 +6,8 @@ Packages used include plotly, ggplot, and rworldmap.
 
 A working version of the app can be found here: https://tdwils.shinyapps.io/infectious_diseases/
 
+![Image of NYC Eateries Shiny app](https://github.com/tdwils/infectious_diseases/blob/master/www/diseases.PNG)
+
 ## Data
 
 The original files were downloaded from the WHO website as Excel template (.xlt) files. They were then opened in Excel and saved as Excel worksheets (.xlsx) to decrease the file size.
