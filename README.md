@@ -4,6 +4,8 @@ This Shiny app explores global mortality from infectious diseases using data fro
 
 Packages used include plotly, ggplot, and rworldmap.
 
+A working version of the app can be found here: https://tdwils.shinyapps.io/infectious_diseases/
+
 ## Data
 
 The original files were downloaded from the WHO website as Excel template (.xlt) files. They were then opened in Excel and saved as Excel worksheets (.xlsx) to decrease the file size.
