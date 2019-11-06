@@ -6,7 +6,7 @@ Packages used include plotly, ggplot, and rworldmap.
 
 A working version of the app can be found here: https://tdwils.shinyapps.io/infectious_diseases/
 
-![Image of NYC Eateries Shiny app](https://github.com/tdwils/infectious_diseases/blob/master/www/diseases.PNG)
+![Image of Infectious Diseases Shiny app](https://github.com/tdwils/infectious_diseases/blob/master/www/diseases.PNG)
 
 ## Data
 
