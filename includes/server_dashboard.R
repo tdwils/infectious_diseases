@@ -32,7 +32,7 @@ output$deaths_box <- renderValueBox({
     HTML(
       paste0(total_deaths, " <br/>Persons")
     ), 
-    "deaths from infectious diseases", 
+    "deaths worldwide from infectious diseases", 
     icon = icon("globe"),
     color = "blue"
   )
@@ -50,7 +50,7 @@ output$numbers_females_box <- renderValueBox({
     HTML(
       paste0(total_numbers_females, " <br/>Females")
     ), 
-    "deaths from infectious diseases", 
+    "deaths worldwide from infectious diseases", 
     icon = icon("venus"),
     color = "green"
   )
@@ -68,7 +68,7 @@ output$numbers_males_box <- renderValueBox({
     HTML(
       paste0(total_numbers_males, " <br/>Males")
     ), 
-    "deaths from infectious diseases", 
+    "deaths worldwide from infectious diseases", 
     icon = icon("mars"),
     color = "purple"
   )
