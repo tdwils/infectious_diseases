@@ -3,6 +3,7 @@
 
 dashboard <- function() tagList(
   fluidPage(
+    useShinyjs(),
     includeCSS("www/style.css"),
     dashboardPage(
       dashboardHeader(disable = TRUE),

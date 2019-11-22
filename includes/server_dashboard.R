@@ -279,14 +279,20 @@ observeEvent(event_data("plotly_click", source = "country"), {
   clicked <- event_data("plotly_click", source = "country")
   values$country_clicked <- clicked$key
 
+  # Clear disease that was clicked
   values$disease_clicked <- NULL
 
+  # Clear click data
+  clear_click(source = "country")
 })
 
 observeEvent(event_data("plotly_click", source = "disease"), {
 
   clicked <- event_data("plotly_click", source = "disease")
   values$disease_clicked <- clicked$key
+  
+  # Clear click data
+  clear_click(source = "disease")
   
 })
 

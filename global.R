@@ -1,6 +1,7 @@
 # global.R
 
 
+library(shinyjs)
 library(markdown)
 library(rworldmap)
 library(scales)
