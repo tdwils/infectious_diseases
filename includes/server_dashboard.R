@@ -26,7 +26,8 @@ output$deaths_box <- renderValueBox({
   dataset_numbers <- get_dataset_numbers() %>%
     filter(Sex == "All") 
   total_deaths <- sum(dataset_numbers$deaths, na.rm = TRUE) %>% 
-    format(big.mark = ",", trim = TRUE, digits = 0, scientific = FALSE)
+    round(digits = 0) %>%
+    format(big.mark = ",", trim = TRUE, scientific = FALSE)
   
   valueBox(
     HTML(
@@ -44,7 +45,8 @@ output$numbers_females_box <- renderValueBox({
     filter(Sex == "Female") %>% 
     select(deaths) %>%
     sum(na.rm = TRUE) %>% 
-    format(big.mark = ",", trim = TRUE, digits = 0, scientific = FALSE)
+    round(digits = 0) %>%
+    format(big.mark = ",", trim = TRUE, scientific = FALSE)
   
   valueBox(
     HTML(
@@ -62,7 +64,8 @@ output$numbers_males_box <- renderValueBox({
     filter(Sex == "Male") %>% 
     select(deaths) %>%
     sum(na.rm = TRUE) %>% 
-    format(big.mark = ",", trim = TRUE, digits = 0, scientific = FALSE)
+    round(digits = 0) %>%
+    format(big.mark = ",", trim = TRUE, scientific = FALSE)
   
   valueBox(
     HTML(
@@ -215,10 +218,9 @@ rate_disease <- reactive({
   # Alphabetical order from top
   g <- ggplot(hk, aes(x = reorder(Disease, total), y = total, key = Disease,
                       text = paste(Disease, ": ", 
-                                   format(total, 
+                                   format(round(total, 0), 
                                           big.mark = ",", 
-                                          trim = TRUE, 
-                                          digits = 0, 
+                                          trim = TRUE,  
                                           scientific = FALSE),
                                    "<br>", countries_text
                       )
@@ -440,10 +442,9 @@ numbers_sex <- reactive({
 
   g <- ggplot(data, aes(x = Sex, y = total, fill = Sex, 
                         text = paste(Sex, ": ", 
-                                     format(total, 
+                                     format(round(total, 0), 
                                             big.mark = ",", 
                                             trim = TRUE, 
-                                            digits = 0, 
                                             scientific = FALSE),
                                      "<br>", country_text(),
                                      "<br>", disease_text())
